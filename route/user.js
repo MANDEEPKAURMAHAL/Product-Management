@@ -53,7 +53,7 @@ router.post('/delectProductByProductId', (req, res) => {
   });
 });
 
-// List api for all Product with and pagination
+// List api for all Product with pagination
 // For pagination use parameter page and for one page limit is 10
 router.get("/getAllProductByCategoryId", (req, res) => {
   userController.getAllProductByCategoryId(req).then((data) => {
@@ -63,7 +63,7 @@ router.get("/getAllProductByCategoryId", (req, res) => {
   });
 });
 
-// List api for all Product with and pagination
+// List api for all category with pagination
 // For pagination use parameter page and for one page limit is 10
 router.get("/getAllCategory", (req, res) => {
   userController.getAllCategory(req).then((data) => {
